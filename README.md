@@ -57,5 +57,5 @@ docker-compose exec web python manage.py runserver 0.0.0.0:8000
 
 Или напрямую запросом к базе в образе.
 ```
-docker compose exec -it db psql -U postgres -c 'SELECT * FROM weather_db_weather;'
+docker-compose exec -it db psql -U postgres -c 'SELECT * FROM weather_db_weather;'
 ```
